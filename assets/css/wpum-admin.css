@@ -1,0 +1,153 @@
+.custom_meta_box_item {
+    padding: 0.5rem;
+    display: block;
+}
+
+div#custom_meta_box h2.hndle.ui-sortable-handle {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.inside .add_btn_cover {
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+button.um_add_update_btn {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    border-radius: 5px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button.um_add_update_btn:hover {
+    background: transparent;
+    color: green;
+    border-color: green;
+}
+div.live_posts_update_main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+div.live_posts_update_main .live_posts_update_wrap {
+    background: #fafafa;
+    border-radius: 5px;
+    border: 1px solid #fafafa;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.live_posts_update_wrap .um_live_post_field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+.um_live_post_field label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+div#custom_meta_box h2.hndle.ui-sortable-handle {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.um_live_post_field.um_lv_remove_btn {
+    display: block;
+}
+
+
+.um_live_post_field.um_lv_remove_btn button.remove_repeater {
+    padding: 0.5rem 1rem;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid red;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.um_live_post_field.um_lv_remove_btn button.remove_repeater:hover {
+    background: transparent;
+    color: red;
+    border-color: red;
+}
+.um_live_post_field input[type="text"] {
+    min-height: 40px;
+    font-size: 1rem;
+}
+.um_lv_article_body textarea{
+    width: 100%;
+}
+
+*:disabled {
+    background-color: gray !important;
+    color: darkgray !important;
+    cursor: not-allowed !important;
+    border: none !important;
+}
+select#custom_post_type_option {
+    width: 20%;
+}
+.wd_live_checkboxes_wrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+    margin: 1rem 0;
+}
+.wd_live_posts_keywords {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    flex-direction: column;
+    gap: 1rem;
+}
+.wd_live_posts_keywords label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.date_ui_flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+a#update_date_now {
+    width: auto;
+    display: block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #000;
+    background: #e2e2e2;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in-out;
+}
+a#update_date_now:hover, a#update_date_now:focus {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000000;
+    box-shadow:none;
+    outline: none;
+}
+a#clear_date_now {
+    box-shadow: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+a#clear_date_now:hover, a#clear_date_now:focus {
+    color: #9b9b9b;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.date_ui_flex input[type="datetime-local"] {
+    width: 17%;
+}
