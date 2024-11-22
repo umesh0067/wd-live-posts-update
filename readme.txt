@@ -2,13 +2,13 @@
 Contributors: umeshladumor
 Tags: live posts, real-time updates, custom post types, schema.org, SEO
 Requires at least: 4.6
-Tested up to: 6.6.2
+Tested up to: 6.7
 Requires PHP: 5.6
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Live Post Updates is a powerful plugin for live updates of posts and custom post types, integrating schema.org for better SEO, and providing widgets and shortcodes to display live posts.
+Live Post Updates is a powerful plugin for live updates of posts and custom post types, integrating schema.org for better SEO.
 
 == Description ==
 

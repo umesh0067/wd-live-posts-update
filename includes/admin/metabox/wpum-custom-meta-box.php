@@ -165,7 +165,7 @@ function wpum_live_save_meta_box($post_id) {
     // Get the current date and time
     $current_date_time = current_time('Y-m-d H:i:s');
 	
-	$wd_custom_meta = isset($_POST['custom_meta']) && is_array($_POST['custom_meta']) ? wp_unslash($_POST['custom_meta']) : [];
+	$wd_custom_meta = isset($_POST['custom_meta']) && is_array($_POST['custom_meta']) ? sanitize_text_field( wp_unslash($_POST['custom_meta']) ) : [];
 
     // Check if custom_meta data is set
     if (!empty($wd_custom_meta) ) {
@@ -376,16 +376,16 @@ add_filter('the_content', 'wpum_append_meta_box_content');
 
 // Register Recent Posts with Image Widget
 function wpum_recent_posts_with_image_widget() {
-    register_widget('WDUM_posts_Update_Widget');
+    register_widget('WPUM_posts_Update_Widget');
 }
 add_action('widgets_init', 'wpum_recent_posts_with_image_widget');
 
 
-class WDUM_Posts_Update_Widget extends WP_Widget {
+class WPUM_Posts_Update_Widget extends WP_Widget {
     // Constructor
     function __construct() {
         parent::__construct(
-            'WDUM_posts_Update_Widget', // Base ID
+            'WPUM_posts_Update_Widget', // Base ID
             __('WD Live Posts with Image', 'wd-live-posts-update'), // Name
             array('description' => __('A widget to display recent posts with their featured images', 'wd-live-posts-update'))
         );

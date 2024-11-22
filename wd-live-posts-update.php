@@ -221,5 +221,3 @@ $wpum_plugin_shortcode->add_hooks();
 
 //Metabox file to handle metaboxes
 include_once( WPUM_PLUGIN_ADMIN . '/metabox/wpum-custom-meta-box.php' ); // meta box for deals option
-
-?>
