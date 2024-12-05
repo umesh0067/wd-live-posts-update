@@ -50,7 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	const addButton = document.getElementById('add_repeater');
 	const removeButtons = document.querySelectorAll('.remove_repeater');
 
-	//const activecheckbox = document.getElementById('custom_checkbox_meta');
+	const activecheckbox = document.getElementById('custom_checkbox_meta');
+
+	document.getElementById('custom_checkbox_meta').addEventListener('change', function() {
+		if (this.checked) {
+			checkbox.checked = false;
+		}
+	});
 	
 
 	// Function to update button state based on checkbox
@@ -60,10 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			button.disabled = checkbox.checked;
 		});
 
-		// if(checkbox.checked){
-		// 	console.log("checked:");
-		// 	activecheckbox.checked = false;
-		// }
+		if(checkbox.checked){
+			activecheckbox.checked = false;
+		}
 		// if(activecheckbox.checked){
 		// 	console.log("active-checked:");
 		// 	checkbox.checked = false;
@@ -76,8 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update button state on checkbox input (checked/unchecked)
 	checkbox.addEventListener('input', updateButtonState);
 });
-
-
 
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -3,7 +3,7 @@
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
-$selected_post_type = isset(get_option( 'wpum_options_name' )['custom_post_type_option']) ? get_option( 'wpum_options_name' )['custom_post_type_option'] : 'post';
+$selected_post_type = isset(get_option( 'wpum_options_name' )['custom_post_type_option']) ? get_option( 'wpum_options_name' )['custom_post_type_option'] : '';
 
 
 // define custom post types variable.
@@ -37,7 +37,6 @@ function wpum_live_update_badge_before_title_fn( $title, $id ) {
 add_filter('the_title', 'wpum_live_update_badge_before_title_fn', 10, 2 );
 
 
-
 // Add custom metabox
 function wpum_add_meta_boxes() {
     // add active live tag
@@ -61,7 +60,12 @@ function wpum_add_meta_boxes() {
     );
 
 }
-add_action('add_meta_boxes', 'wpum_add_meta_boxes');
+
+// check if plugin setting tab selected post type or not
+if ( !empty($selected_post_type) ) {
+
+    add_action('add_meta_boxes', 'wpum_add_meta_boxes');
+}
 
 
 // checkbox active live post metabox fn
