@@ -53,7 +53,7 @@ $model = $wpum_plugin_model;
 				$wpd_ws_options = get_option( 'wpum_options_name' );
                 //echo '<pre>'; var_dump($wpd_ws_options); echo '</pre>'; exit('here');
 			?>
-		<!-- beginning of the settings meta box -->	
+			<!-- beginning of the settings meta box -->	
 			<div id="wpd-ws-settings" class="post-box-container">
 			
 				<div class="metabox-holder">	
