@@ -3,7 +3,7 @@
 * Plugin Name: WD Live Posts Update
 * Plugin URI: https://profiles.wordpress.org/umeshladumor/
 * Description: Live Post Updates is a powerful WordPress plugin designed to provide live updates for posts and custom post types. It includes functionality to mark posts as live, ensuring they appear in the live update area, and allows users to stop live updates as needed.
-* Version: 1.0.1
+* Version: 1.0.2
 * Author: Umesh Ladumor
 * Author URI: https://github.com/umesh0067
 * License:     GPLv2 or later

@@ -34,7 +34,7 @@ class WPUM_Form_Admin_Pages {
 	
 	public function wpum_plugin_add_menu_page() {
 		
-		$wpd_ws_setting = add_menu_page( esc_html__( 'Live Post Setting Page', 'wd-live-posts-update' ), esc_html__( 'Live Post Setting Page', 'wd-live-posts-update' ), 'manage_options', 'plugin-setting-page', array($this, 'wpum_ws_settings') );
+		$wpd_ws_setting = add_menu_page( esc_html__( 'Live Post Setting', 'wd-live-posts-update' ), esc_html__( 'Live Post Setting', 'wd-live-posts-update' ), 'manage_options', 'plugin-setting-page', array($this, 'wpum_ws_settings') );
 		
 		//add_action( "admin_head-$wpd_ws_setting", array( $this->scripts, 'wpd_ws_settings_scripts' ) );
 	}
